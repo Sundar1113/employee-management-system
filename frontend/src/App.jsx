@@ -71,7 +71,7 @@ function AddEmployee() {
         }
 
         try {
-            const response = await axios.post('http://localhost:5001/employee', formData);
+            const response = await axios.post('http://localhost:5000/employee', formData);
             setSuccessMessage(response.data.message);
             setFormData({
                 employeeId: '',
